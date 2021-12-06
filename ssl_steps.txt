@@ -1,0 +1,5 @@
+./cagen.sh
+md5sum myCA.pem
+./sslgen.sh <ip address>
+Enter pass phrase for ./myCA.key >>>>>> give password
+now change config.json
