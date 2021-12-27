@@ -2,7 +2,9 @@
 md5sum myCA.pem
 ./sslgen.sh <ip address>
 Enter pass phrase for ./myCA.key >>>>>> give password
+sudo cp myCA.pem /usr/share/ca-certificates/myCA.crt
+sudo cp myCA.pem /usr/share/ca-certificates/extra/myCA.crt
 sudo cp myCA.pem /usr/local/share/ca-certificates/myCA.crt
-sudo cp myCA.pem /usr/share/local/ca-certificates/myCA.crt
+sudo cp myCA.pem /usr/local/share/ca-certificates/extra/myCA.crt
 sudo dpkg-reconfigure ca-certificates
 now change config.json
